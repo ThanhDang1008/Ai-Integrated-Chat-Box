@@ -1,0 +1,134 @@
+.dark_sidebar_chat_gemini_container {
+  width: 20%;
+  overflow-y: auto;
+  height: 95.6vh;
+  //border-right: 1px solid #2a2a44;
+  .ant-drawer-header {
+    background: radial-gradient(
+      circle,
+      rgba(22, 7, 60, 1) 11%,
+      rgba(1, 9, 23, 1) 89%
+    );
+    border-bottom: 1px solid #2a2a44;
+    .ant-drawer-title {
+      color: #b2b1de;
+    }
+    .ant-drawer-close {
+      color: #b2b1de;
+    }
+  }
+  .ant-drawer-body {
+    background: radial-gradient(
+      circle,
+      rgba(22, 7, 60, 1) 11%,
+      rgba(1, 9, 23, 1) 89%
+    );
+    .sidebar_chat__header {
+      display: flex;
+      justify-content: space-between;
+      i {
+        font-size: 1.3rem;
+        color: #b2b1de;
+        padding: 6px;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          cursor: pointer;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .item__chat {
+      color: #b2b1de;
+      padding: 6px;
+      display: block;
+      text-decoration: none;
+      margin-bottom: 3px;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+    .item__chat_edit {
+      width: 90%;
+      color: #b2b1de;
+      padding: 3px;
+      margin-bottom: 6px;
+      margin-left: 3px;
+      border: 1px solid rgb(73 63 92);
+      border-radius: 5px;
+      background-color: #212239;
+    }
+    .item__chat_active {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+    .item_menu_dropdown {
+      color: #b2b1de;
+      padding: 6px;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.light_sidebar_chat_gemini_container {
+  @extend .dark_sidebar_chat_gemini_container;
+  .ant-drawer-header {
+    background: radial-gradient(
+      circle,
+      rgb(216, 212, 225) 11%,
+      rgb(215, 230, 255) 89%
+    );
+    .ant-drawer-title {
+      color: #3a4c84;
+    }
+    .ant-drawer-close {
+      color: #3a4c84;
+    }
+    i {
+      color: #3a4c84;
+    }
+  }
+  .ant-drawer-body {
+    background: radial-gradient(
+      circle,
+      rgb(216, 212, 225) 11%,
+      rgb(215, 230, 255) 89%
+    );
+    .sidebar_chat__header{
+      i {
+        color: #3a4c84;
+        &:hover {
+          background-color: rgb(146 158 197 / 28%);
+        }
+      }
+    }
+    .item__chat {
+      color: #3a4c84;
+      &:hover {
+        background-color: rgb(146 158 197 / 28%);
+      }
+    }
+    .item__chat_edit{
+      color: #2e5074;
+      border: 1px solid rgb(55 95 165);
+      background-color: #dde0ea;
+    }
+    .item__chat_active{
+      background-color: rgb(146 158 197 / 28%);
+    }
+    .item_menu_dropdown {
+      color: #b2b1de;
+      &:hover {
+        color: #3a4c84;
+        background-color: rgb(146 158 197 / 28%);
+      }
+    }
+  }
+  
+}

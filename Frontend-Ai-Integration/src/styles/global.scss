@@ -1,0 +1,26 @@
+::-webkit-scrollbar {
+    width: 5px; /* Chiều rộng của thanh cuộn dọc */
+    height: 12px; /* Chiều cao của thanh cuộn ngang */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #312f2f; /* Màu nền của track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #88898e; /* Màu của thanh cuộn */
+    border-radius: 6px; /* Bo tròn góc của thanh cuộn */
+    &:hover {
+      background: #555; /* Màu của thanh cuộn khi hover */
+    }
+  }
+
+// html {
+//   scroll-behavior: smooth;
+// }
+
+:where(.css-dev-only-do-not-override-m4timi).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  background: #ffffff;
+  background-color: rgba(182, 152, 152, 0.18);
+  border: 1px solid rgba(200, 138, 138, 0.66);
+}

@@ -1,0 +1,71 @@
+.admin_container {
+  $dark_mode_slider_bg: #2e2e2e;
+
+  .ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+    background-color: #393838;
+  }
+
+  .ant-layout {
+    .ant-layout-sider-children {
+      background-color: $dark_mode_slider_bg;
+      .ant-menu {
+        background-color: $dark_mode_slider_bg;
+        color: white;
+
+        .ant-menu-item {
+          color: rgb(183, 183, 183);
+          background-color: #2e2e2e;
+          &:hover {
+            background-color: #434343;
+            color: white;
+          }
+        }
+
+        .ant-menu-item-selected {
+          background-color: #9a3737;
+          color: white;
+          &:hover {
+            background-color: #974646;
+          }
+        }
+
+        .ant-menu-submenu-title {
+          color: rgb(230, 230, 230);
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .ant-layout-sider-trigger {
+      background-color: #333;
+      color: white;
+      &:hover {
+        background-color: #434343;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575.5px) {
+    .ant-layout-sider {
+      display: none;
+    }
+    .ant-layout-header {
+      .ant-space-item {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (min-width: 575.5px) {
+    .ant-layout-sider {
+      display: block;
+    }
+    .ant-layout-header {
+      .ant-space-item {
+        display: none;
+      }
+    }
+  }
+}

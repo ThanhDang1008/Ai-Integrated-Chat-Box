@@ -1,0 +1,22 @@
+.account_container {
+  .account_header_avatar {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 2px solid #8e8e8e;
+    &:hover {
+      border: 2px solid #25c2a0;
+      opacity: 0.8;
+    }
+  }
+  .account_header_goback {
+    margin-right: 10px;
+    padding: 12px 5px;
+    color: #d8d7d7;
+    font-size: 1.2em;
+    &:hover {
+      color: #4096ff;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.dark_layoutchat_container {
+  background: radial-gradient(
+    circle,
+    rgba(22, 7, 60, 1) 11%,
+    rgba(1, 9, 23, 1) 89%
+  );
+}
+
+.light_layoutchat_container {
+  @extend .dark_layoutchat_container;
+  background: radial-gradient(circle, rgb(216 212 225) 11%, rgb(215 230 255) 89%);
+}

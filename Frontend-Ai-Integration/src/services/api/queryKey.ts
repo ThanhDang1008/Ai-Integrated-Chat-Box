@@ -1,0 +1,3 @@
+
+export const GET_DETAIL_CHATBOT = "GET_DETAIL_CHATBOT"
+export const GET_ALL_CHATBOT = "GET_ALL_CHATBOT"

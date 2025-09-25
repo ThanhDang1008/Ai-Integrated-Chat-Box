@@ -1,0 +1,195 @@
+.home_card_container {
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  padding: 2rem;
+  flex-direction: column;
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  .Card_Container-Item {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    background: rgb(38, 27, 206);
+    background: linear-gradient(
+      34deg,
+      rgba(38, 27, 206, 1) 0%,
+      rgba(21, 92, 204, 1) 63%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+
+  .Card_Container-icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 42px;
+  }
+
+  .Catd_Title {
+    width: 90%;
+    height: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+  }
+
+  .Card_text {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px;
+  }
+  /* ghi đè */
+  .ant-btn.css-dev-only-do-not-override-f7vrd6.ant-btn-default {
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 550;
+    align-items: center;
+    margin: 20px 0 40px 0;
+  }
+
+  /* Media Queries */
+  @media only screen and (max-width: 575px) {
+    width: 95%;
+    padding: 1.5rem;
+
+    .Card_Container-icon {
+      width: 80px;
+      height: 80px;
+      margin-top: 32px;
+    }
+
+    .Catd_Title {
+      font-size: 1.5rem;
+    }
+
+    .Card_text {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+
+    .ant-btn.css-dev-only-do-not-override-f7vrd6.ant-btn-default {
+      height: 45px;
+      width: 90px;
+      font-size: 0.75rem;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    width: 100%;
+    padding: 1rem;
+    margin: 30px auto;
+
+    .Card_Container-icon {
+      width: 70px;
+      height: 70px;
+      margin-top: 25px;
+    }
+
+    .Catd_Title {
+      font-size: 1.2rem;
+    }
+
+    .Card_text {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+
+    .ant-btn.css-dev-only-do-not-override-f7vrd6.ant-btn-default {
+      height: 40px;
+      width: 85px;
+      font-size: 0.7rem;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    width: 90%;
+    padding: 2rem;
+    margin: 50px auto;
+
+    .Card_Container-icon {
+      width: 100px;
+      height: 100px;
+    }
+
+    .Catd_Title {
+      font-size: 2rem;
+    }
+
+    .Card_text {
+      font-size: 1rem;
+      padding: 10px;
+    }
+
+    .ant-btn.css-dev-only-do-not-override-f7vrd6.ant-btn-default {
+      height: 50px;
+      width: 100px;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 80%;
+    padding: 2rem;
+    margin: 50px auto;
+
+    .Card_Container-icon {
+      width: 120px;
+      height: 120px;
+    }
+
+    .Catd_Title {
+      font-size: 3rem;
+    }
+
+    .Card_text {
+      font-size: 1.1rem;
+      padding: 15px;
+    }
+
+    .ant-btn.css-dev-only-do-not-override-f7vrd6.ant-btn-default {
+      height: 55px;
+      width: 120px;
+      font-size: 0.85rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    width: 90%;
+    padding: 2rem;
+    margin: 100px auto;
+
+    .Card_Container-icon {
+      width: 150px;
+      height: 150px;
+    }
+
+    .Catd_Title {
+      font-size: 4rem;
+    }
+
+    .Card_text {
+      font-size: 1.2rem;
+      padding: 20px;
+    }
+
+    .ant-btn.css-dev-only-do-not-override-f7vrd6.ant-btn-default {
+      height: 60px;
+      width: 133px;
+      font-size: 0.9rem;
+    }
+  }
+}

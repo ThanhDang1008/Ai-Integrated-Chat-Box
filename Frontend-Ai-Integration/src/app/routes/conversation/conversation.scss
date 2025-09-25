@@ -1,0 +1,70 @@
+.container_conversation {
+  .ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+    background-color: #393838;
+  }
+
+  .ant-layout-sider-children {
+    background-color: #f7f7f8;
+    .ant-menu {
+      background-color: #f7f7f8;
+      color: white;
+
+      .ant-menu-item {
+        color: rgb(98 98 98);
+        background-color: #f7f7f8;
+      }
+      //ghi đè màu khi hover
+      .ant-menu-item:not(.ant-menu-item-selected):hover {
+        background-color: #d8d8d8;
+        color: rgb(23, 23, 23);
+      }
+      .ant-menu-item-selected {
+        background-color: #d7edfe;
+        color: #1968d6;
+      }
+      .ant-menu-submenu-title {
+        color: rgb(230, 230, 230);
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .ant-layout-sider-trigger {
+  }
+
+  .ant-layout-content {
+    .outlet_content {
+    }
+  }
+
+  @media screen and (max-width: 575.5px) {
+    .ant-layout-content {
+      .outlet_content {
+        margin-top: 20%;
+      }
+    }
+    .ant-layout-sider {
+      display: none;
+    }
+    .ant-layout-header {
+      //display: block;
+      .ant-space-item {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (min-width: 575.5px) {
+    .ant-layout-sider {
+      display: block;
+    }
+    .ant-layout-header {
+      display: none !important;
+      .ant-space-item {
+        display: none;
+      }
+    }
+  }
+}

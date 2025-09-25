@@ -1,0 +1,39 @@
+.sidebar-chat-with-file {
+  width: 30%;
+  overflow-y: auto;
+  height: 100vh;
+  border-right: 1px solid #2a2a44;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  //align-items: center;
+  .container_chat_with_file {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    background: rgb(83 83 83 / 20%);
+    padding: 5%;
+    overflow-y: auto;
+    .ant-collapse {
+      margin-top: 10px;
+      .ant-collapse-header {
+        color: #fff;
+        background: rgb(154 154 154 / 12%);
+        border-radius: 0;
+        margin-top: 8px;
+      }
+      .ant-collapse-content {
+        color: #fff;
+        background: rgb(120 116 116 / 12%);
+        border-radius: 0 0 8px 8px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}
+
+//background: rgb(120 116 116 / 12%);

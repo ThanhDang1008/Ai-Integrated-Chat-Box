@@ -1,0 +1,234 @@
+.home_cardtrial_container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 12%;
+  .card_trial-full {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background: rgb(90, 41, 182);
+    background: linear-gradient(
+      308deg,
+      rgba(90, 41, 182, 1) 0%,
+      rgba(74, 79, 210, 1) 44%,
+      rgba(66, 96, 209, 1) 100%
+    );
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+
+    .card_trial-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+
+      .card_trial-name {
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 600;
+        padding-top: 12px;
+      }
+      .card_trial-title {
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 400;
+        opacity: 0.6;
+        text-align: left;
+      }
+      .card_trial-button {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        background-color: rgb(24 58 122 / 42%);
+        border-radius: 10px;
+        margin: 10px 1px 10px 1px;
+        &:hover {
+          background-color: rgba(81, 130, 222, 0.62);
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+
+      .card_trial-note {
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 400;
+        opacity: 0.6;
+        text-align: center;
+      }
+    }
+  }
+
+  // Responsive cho điện thoại
+  @media only screen and (min-width: 376px) and (max-width: 791px) {
+    .card_trial-full {
+      width: 80%;
+      padding: 5%;
+      .card_trial-list {
+        align-items: flex-start;
+        text-align: left;
+
+        .card_trial-name {
+          font-size: 4rem;
+        }
+        .card_trial-title,
+        .card_trial-note {
+          font-size: 1.2rem;
+        }
+        .card_trial-button {
+          font-size: 1.3rem;
+          padding: 16px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  //card_trial-img
+  @media only screen and (max-width: 600px) {
+    .card_trial-full {
+      .card_trial-list {
+        align-items: center;
+        text-align: center;
+      }
+      .card_trial-img {
+        display: none;
+      }
+    }
+  }
+  //card_trial-img
+  @media only screen and (min-width: 600px) and (max-width: 791px) {
+    .card_trial-full {
+      .card_trial-img {
+        position: absolute;
+        width: 58%;
+        right: -16%;
+        top: -14%;
+      }
+    }
+  }
+
+  /* Responsive cho iPad */
+  @media only screen and (min-width: 791px) and (max-width: 1025px) {
+    .card_trial-full {
+      width: 80%;
+      .card_trial-list {
+        padding: 2%;
+        align-items: flex-start;
+        text-align: left;
+
+        .card_trial-name {
+          font-size: 3.5rem;
+        }
+        .card_trial-title,
+        .card_trial-note {
+          font-size: 1.1rem;
+        }
+        .card_trial-button {
+          font-size: 1.2rem;
+          padding: 14px;
+          width: auto;
+        }
+      }
+
+      .card_trial-img {
+        position: absolute;
+        width: 46%;
+        right: -13%;
+        top: -26%;
+      }
+    }
+  }
+
+  /* Responsive cho PC */
+  @media only screen and (min-width: 1025px) {
+    .card_trial-full {
+      width: 80%;
+      padding: 4%;
+      .card_trial-list {
+        align-items: flex-start;
+        text-align: left;
+
+        .card_trial-name {
+          font-size: 4rem;
+        }
+        .card_trial-title,
+        .card_trial-note {
+          font-size: 1.3rem;
+        }
+        .card_trial-button {
+          font-size: 1.4rem;
+          padding: 16px;
+          width: auto;
+        }
+      }
+
+      .card_trial-img {
+        position: absolute;
+        width: 40%;
+        right: -12%;
+        top: -23%;
+      }
+    }
+  }
+
+  // @media only screen and (max-width: 375px) {
+  //   .card_trial-full {
+  //     width: 100%;
+  //     padding: 10px 20px;
+  //   }
+
+  //   .card_trial-list {
+  //     padding: 20px;
+  //     align-items: center;
+  //     text-align: center;
+  //     transform: scale(0.8);
+  //     transform-origin: top left;
+
+  //     .card_trial-name {
+  //       font-size: 2rem;
+  //     }
+  //     .card_trial-title,
+  //     .card_trial-note {
+  //       font-size: 0.9rem;
+  //     }
+  //     .card_trial-button {
+  //       font-size: 1rem;
+  //       padding: 10px;
+  //       margin: 10px 0 20px 0;
+  //       width: 80%;
+  //     }
+  //   }
+
+  //   .card_trial-img {
+  //     position: relative;
+  //     width: 70%;
+  //     right: 0;
+  //     top: 0;
+  //     margin-top: 10px;
+  //   }
+  // }
+
+  // @media only screen and (max-width: 768px) {
+  //   .card_trial-list {
+  //     transform: scale(0.9);
+  //     transform-origin: top left;
+  //   }
+  // }
+
+  // @media only screen and (max-width: 480px) {
+  //   .card_trial-list {
+  //     transform: scale(0.85);
+  //     transform-origin: top left;
+  //   }
+  // }
+
+  // @media only screen and (max-width: 320px) {
+  //   .card_trial-list {
+  //     transform: scale(0.75);
+  //     transform-origin: top left;
+  //   }
+  // }
+}

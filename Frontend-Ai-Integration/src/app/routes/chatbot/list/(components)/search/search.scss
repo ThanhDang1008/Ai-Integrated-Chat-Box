@@ -1,0 +1,25 @@
+.search-chatbot {
+  .ant-input-wrapper {
+    .ant-input {
+      width: 300px;
+      height: 35px;
+      border-radius: 5px;
+      border: 1px solid #d9d9d9;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      &:focus {
+        border-color: #d4eaec;
+        box-shadow: 0 0 0 2px rgba(79, 158, 233, 0.2);
+      }
+    }
+    .ant-input-group-addon {
+      .ant-btn {
+        height: 35px;
+        border-radius: 5px;
+        &:hover {
+          border-color: #40a9ff;
+        }
+      }
+    }
+  }
+}

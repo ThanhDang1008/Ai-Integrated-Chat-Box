@@ -1,0 +1,50 @@
+.ListChatbot_Header_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-top: 1px solid #04172d;
+
+  .ant-btn {
+    position: absolute;
+    top: 10px;
+
+    left: 10px;
+    background: transparent;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .banner {
+    width: 100%;
+    height: 264px;
+    .img-banner {
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .topheader-left {
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    .img-logo {
+      width: 150px;
+      margin: 0 0 0 40px;
+    }
+    .text-logo {
+      text-align: center;
+      font-weight: 700;
+      color: #0e4582;
+      margin: 0 0 0 20px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .topheader-left {
+    .text-logo {
+      display: none;
+    }
+  }
+}

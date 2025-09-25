@@ -1,0 +1,46 @@
+.chatbot {
+  background-image: linear-gradient(#0e4582, #f5f6f8d4) !important;
+
+  .header_ListChatbot_container {
+    width: 90%;
+    margin: auto;
+  }
+  .page_footer_chatbot {
+    width: 90%;
+    margin: 15px auto 0;
+  }
+  .pagecontainer-grid {
+    display: flex;
+    justify-content: center; 
+    .pagecontainer_search {
+      display: flex;
+    }
+
+    .pagecontainer_list {
+      background-color: rgb(227, 242, 247);
+      width: 90%;
+     
+    }
+    @media (max-width: 1400px) {
+      .header_ListChatbot_container {
+        width: 100%;
+        margin: 0;
+
+        .pagecontainer-grid {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: 550px) {
+      .cardlistcontainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 6px;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  }
+}

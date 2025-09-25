@@ -1,0 +1,14 @@
+
+node_modules
+/src
+# /dist/server_security.js
+# /dist/config/check_permission_server.js
+# /dist/config/check_permission.js
+# /dist/config/initDirectory.js
+# /src/public
+.git
+.gitignore
+key.txt
+nodemon.json
+tsconfig.json
+

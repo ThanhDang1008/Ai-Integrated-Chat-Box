@@ -1,0 +1,104 @@
+.home_cardlist_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 20px 0 100px 0;
+
+  .container_title {
+    font-size: 2rem;
+    margin: 40px;
+    text-align: center;
+  }
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    justify-content: center;
+
+    .card-item {
+      color: #fff;
+      width: 90%;
+      max-width: 250px;
+      margin: 18px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(30px);
+
+      .user-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        padding: 4px;
+      }
+
+      .user-name {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .user-profession {
+        font-size: 1rem;
+        color: #e3e3e3;
+        font-weight: 500;
+        margin: 8px 0;
+        text-align: center;
+      }
+
+      .user-comment {
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    padding: 1rem;
+
+    .container_title {
+      font-size: 1.5rem;
+      margin: 20px;
+    }
+
+    .card-list {
+      flex-direction: column;
+      align-items: center;
+
+      .card-item {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+
+        .user-name {
+          font-size: 1rem;
+        }
+
+        .user-profession {
+          font-size: 0.9rem;
+        }
+
+        .user-comment {
+          font-size: 0.9rem;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}

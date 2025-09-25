@@ -1,0 +1,327 @@
+.profile_container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .text-bodyS {
+    margin: 0;
+    padding: 5px;
+    max-width: 276px;
+  }
+
+  .container-item {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    .hearder-setting {
+      margin: 24px;
+      padding: 0;
+
+      .text-hearder {
+        margin: 0;
+        padding: 5px;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      p {
+        color: rgb(139 141 151);
+        font-size: 16px;
+      }
+    }
+
+    .profile_avatar {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid #e7e0e0;
+
+      .profile_avatar_config {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .ant-upload {
+          .ant-btn {
+            width: 101px;
+            height: 40px;
+            border-radius: 10px;
+            color: #000;
+
+            span {
+              font-weight: 500;
+            }
+
+            &:hover {
+              border: 1px solid#d9d9d9;
+              background-color: rgb(239 240 243);
+            }
+          }
+        }
+
+        .ant-btn-delete {
+          &:hover {
+            background-color: rgb(239 240 243);
+          }
+        }
+      }
+    }
+
+    .personal-infor {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid #e7e0e0;
+
+      .form-input {
+        .form-grid {
+          display: grid;
+          grid-template-columns: auto repeat(1, 1fr);
+          gap: 10px;
+
+          .form-item {
+            margin: 5px;
+
+            .ant-input {
+              height: 40px;
+              border: 1px solid rgb(204 206 215);
+              border-radius: 10px;
+              padding: 9px;
+              font-size: medium;
+              font-weight: 400;
+            }
+
+            .ant-select {
+              width: 200px;
+
+              .ant-select-selector {
+                border: 1px solid rgb(204 206 215);
+                font-size: medium;
+                font-weight: 400;
+              }
+            }
+
+            .ant-typography {
+              margin: 0 0 10px 0;
+            }
+          }
+        }
+      }
+
+      .container-button {
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px 0;
+        padding: 0 5px 0 0;
+        gap: 10px;
+
+        .ant-btn-save {
+          background-color: #000000;
+          color: #ffffff;
+          border-radius: 10px;
+          width: 60px;
+          height: 32px;
+          padding: 6px 10px;
+          &:hover {
+            background-color: #4a4a4a;
+          }
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        .ant-btn-cancel {
+          border-radius: 10px;
+          color: rgb(204 206 215);
+          width: 60px;
+          height: 32px;
+          padding: 6px 10px;
+
+          span {
+            font-weight: 500;
+          }
+
+          &:hover {
+            color: #000000;
+            border: 1px solid #000000;
+          }
+        }
+      }
+    }
+
+    .password-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid #e7e0e0;
+
+      .ant-btn {
+        border-radius: 12px;
+        height: 34px;
+        width: 120px;
+        background-color: #000000;
+        align-items: center;
+
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .mobile-user {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid #e7e0e0;
+
+      form {
+        width: 400px;
+
+        .ant-input {
+          width: 100%;
+          height: 40px;
+          padding: 0 15px;
+          border-radius: 12px;
+        }
+
+        .container-button {
+          display: flex;
+          justify-content: end;
+          margin: 20px 0 0;
+
+          .ant-btn {
+            border-radius: 12px;
+            height: 32px;
+            width: 114px;
+            background-color: #000000;
+            align-items: center;
+
+            span {
+              font-weight: 500;
+              color: #ffffff;
+            }
+          }
+
+          .ant-btn:disabled {
+            background-color: #eff0f3;
+            align-items: center;
+
+            span {
+              color: #b9bbc6;
+            }
+          }
+        }
+      }
+    }
+
+    .delete-account {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 24px;
+      padding: 24px 0;
+      // border-bottom: 1px solid #e7e0e0;
+
+      .ant-btn {
+        border-radius: 12px;
+        width: 152px;
+        height: 34px;
+        padding: 6px 10px;
+        background-color: rgb(217 40 28);
+
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1160px) {
+    display: flex;
+
+    flex-direction: column;
+
+    .container-item {
+      width: 100%;
+
+      .profile_avatar {
+        height: 190px;
+        flex-direction: column;
+
+        .profile_avatar_config {
+          margin: 5px;
+          padding: 15px 0;
+        }
+      }
+
+      .personal-infor {
+        flex-direction: column;
+
+        .form-input {
+          .form-grid {
+            grid-template-columns: auto;
+
+            .form-item {
+              .ant-input {
+                width: 100%;
+              }
+
+              .ant-select {
+                width: 100%;
+              }
+            }
+          }
+
+          .container-button {
+            margin: 5px;
+            justify-content: flex-start;
+          }
+        }
+      }
+
+      .password-item {
+        flex-direction: column;
+
+        .ant-btn {
+          margin: 10px 5px;
+        }
+      }
+
+      .mobile-user {
+        flex-direction: column;
+
+        form {
+          width: 100%;
+
+          .ant-input {
+            width: 100%;
+          }
+
+          .container-button {
+            margin: 10px 0;
+            justify-content: flex-start;
+          }
+        }
+      }
+
+      .delete-account {
+        flex-direction: column;
+
+        .ant-btn {
+          margin: 10px 5px;
+        }
+      }
+    }
+  }
+}

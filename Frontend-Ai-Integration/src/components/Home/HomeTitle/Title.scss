@@ -1,0 +1,174 @@
+// Keyframes for animations
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home_title_container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  // margin-top: 10%;
+  padding-top: 10%;
+  color: #fff;
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
+
+  .container_item--title {
+    width: 100%;
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 6rem;
+    background: rgb(26, 42, 212);
+    background: radial-gradient(
+      circle,
+      rgba(26, 42, 212, 1) 0%,
+      rgba(213, 29, 253, 1) 50%,
+      rgba(69, 251, 252, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: fadeInText 1.5s ease-in-out;
+  }
+
+  .container_item--text {
+    width: 100%;
+    max-width: 630px;
+    font-size: 1.4rem;
+    margin: 18px 0 50px 0;
+    opacity: 0.6;
+    animation: fadeInText 2s ease-in-out;
+  }
+  /* ghi đè */
+  .ant-btn.css-dev-only-do-not-override-an9cvo.ant-btn-primary.ant-btn-lg {
+    border-radius: 25px;
+    height: 52px;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+
+  .container_item--image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    animation: fadeIn 3s ease-in-out;
+  }
+
+  .container_item-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    animation: fadeIn 3.5s ease-in-out;
+  }
+
+  /*  Responsiveness */
+  @media (max-width: 1200px) {
+    .container_item--title {
+      font-size: 6rem;
+    }
+
+    .container_item--text {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container_item--title {
+      font-size: 4rem;
+    }
+
+    .container_item--text {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container_item {
+      padding: 10px;
+
+      .container_item--title {
+        font-size: 2.5rem;
+      }
+
+      .container_item--text {
+        font-size: 1.1rem;
+      }
+
+      .container_item--image {
+        margin-top: 15px;
+      }
+
+      .container_item-link {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .container_item--title {
+      font-size: 4rem;
+    }
+
+    .container_item--text {
+      font-size: 1rem;
+    }
+
+    .container_item-link {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 391px) {
+    .container_item {
+      padding: 5px;
+      margin: 50px 0;
+
+      .container_item--title {
+        font-size: 1.5rem;
+        margin: 15px 0;
+      }
+
+      .container_item--text {
+        font-size: 0.9rem;
+        margin: 15px 0 40px 0;
+      }
+      /* ghi đè */
+      .ant-btn.css-dev-only-do-not-override-an9cvo.ant-btn-primary.ant-btn-lg {
+        height: 45px;
+      }
+
+      .container_item--image {
+        margin-top: 10px;
+      }
+
+      .container_item-link {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

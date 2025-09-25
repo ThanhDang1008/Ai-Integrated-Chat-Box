@@ -1,0 +1,73 @@
+.ListChatbot_Chatbots_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  .ant-card {
+    max-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px,
+      rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+
+    &:hover {
+      scale: 1.01;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px,
+        rgba(0, 0, 0, 0.14) 0px 6px 10px 0px,
+        rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+    }
+    .ant-card-cover {
+      //   min-height: 200px;
+      padding-bottom: 0px;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      img {
+        object-fit: cover;
+        min-height: 200px;
+        max-height: 200px;
+      }
+    }
+    .ant-card-body {
+      padding-top: 0px;
+      min-height: 120px;
+      max-height: 140px;
+      .ant-card-meta {
+        margin-bottom: 10px;
+        .ant-card-meta-avatar {
+          padding-inline-end: 5px;
+        }
+        .ant-card-meta-title {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+      }
+    }
+    .ant-card-actions {
+      max-height: 70px;
+
+      .anticon-folder-open {
+        svg {
+          color: #5b9fdf;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.ant-input-wrapper.ant-input-group.css-dev-only-do-not-override-m4timi {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    width: 60%;
+  }
+}
